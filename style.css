@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #fdfdfd;
+    --linear-text: #FF42A5;
+    --linear-bg: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --text-color: #534C64;
+    --main-color: #0B0223;
+    --white-color: #FFF;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+/* Header Part CSS Start */
+#header-container {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    box-shadow: var(--shadow-color);
+}
+
+.header-icon {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header-icon img {
+    width: 86.041px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+span {
+    color: var(--linear-text);
+}
+
+.header-icon h1 {
+    margin-left: 20px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.main-nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0 20px;
+    font-size: 18px;
+    color: #3C354F;
+}
+
+.logo-img {
+    background: rgba(11, 2, 35, 0.10);
+    padding: 15px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img a {
+    color: #3C354F;
+}
+
+#yt-img {
+    width: 42px;
+    height: 40px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+#tik-tok-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+/* Header Part CSS Start */
+
+
+
+/* Play Section CSS Start */
+#play-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Play Section CSS End */
+
+
+
+
+/* Responsive Design */
+
+/* Header Part Media For Responsive Start */
+@media (max-width: 470px) {
+    #header-container {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .logo-img {
+        padding: 15px 30px;
+    }
+}
+
+/* Header Part Media For Responsive End */
