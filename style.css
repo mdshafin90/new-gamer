@@ -162,7 +162,7 @@ span {
 
 /* Banner Section CSS End */
 
-/* Gamer Section Start */
+/* Gamer Section CSS Start */
 #gamer-container {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     display: flex;
@@ -198,9 +198,168 @@ span {
     line-height: 45px;
 }
 
-/* Gamer Section End */
+/* Gamer Section CSS End */
+
+/* Online Game CSS Start */
+.online-game-content {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+#online-game-container #online-game-paragraph {
+    text-align: center;
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.online-game-content .online-game-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-game-img {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.online-game-img-div {
+    width: 300px;
+    height: 400px;
+}
+
+.online-game-img-div p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.online-game-img .online-game-img-div:nth-child(3) {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+}
+
+.online-game-img .online-game-img-div:nth-child(3) img {
+
+    transition: .5s ease;
+}
+
+.online-game-img-div:nth-child(3):hover img {
+    transform: scale(1.1);
+}
+
+.online-game-img-div:nth-child(3) .online-game-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.online-game-img-div:nth-child(3) .online-game-layer a i {
+    font-size: 50px;
+    color: white;
+}
+
+.online-game-img-div:nth-child(3):hover .online-game-layer {
+    opacity: 1;
+}
+
+/* Online Game CSS End */
+
+/* Play Instant CSS Start */
+#play-instant {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+#play-instant h1 {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#play-instant p {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#play-instant #play-instant-img #play-instant-img-one {
+    flex-shrink: 0;
+}
+
+#play-instant #play-instant-img #play-instant-img-two img {
+    margin-top: -300px;
+    margin-left: -120px;
+    flex-shrink: 0;
+}
+
+/* Play Instant CSS End */
 
 
+/* Games Online CSS Start */
+#games-online-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    align-items: center;
+}
+
+#games-online-container #games-online-img #games-online-img-one {
+    flex-shrink: 0;
+}
+
+#games-online-container #games-online-img #games-online-img-two {
+    margin-top: -300px;
+    margin-left: 500px;
+    flex-shrink: 0;
+}
+
+#games-online-container .games-online-content .games-online-content-heading {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#games-online-container .games-online-content .games-online-content-heading span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#games-online-container .games-online-content p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Games Online CSS End */
 
 
 /* Responsive Design */
@@ -282,3 +441,58 @@ span {
 }
 
 /* Gamer Section Responsive End */
+
+/* Online Game Responsive Start */
+@media (max-width: 470px) {
+    .online-game-img {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .online-game-img .online-game-img-div {
+        margin: 50px 0;
+    }
+
+    .online-game-content {
+        font-size: 25px;
+    }
+
+    #online-game-container #online-game-paragraph {
+        font-size: 15px;
+    }
+}
+
+/* Online Game Responsive End */
+
+/* Play Instant Responsive Start */
+@media(max-width: 470px) {
+    #play-instant {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin: auto;
+    }
+
+    #play-instant-img #play-instant-img-one {
+        width: 300px;
+        height: 400px;
+        margin-top: 30px;
+    }
+
+    #play-instant-img #play-instant-img-two img {
+        width: 100px;
+        height: 200px;
+        margin-top: 300px;
+        margin-right: 300px;
+    }
+
+    /* #play-instant-img {
+        display: flex;
+        justify-content: center;
+    } */
+}
+
+/* Play Instant Responsive End */
