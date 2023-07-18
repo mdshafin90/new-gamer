@@ -96,23 +96,116 @@ span {
 
 
 
-/* Play Section CSS Start */
+/* Banner Section CSS Start */
 #play-container {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    align-items: center;
 }
 
+.play-content {
+    background: url('./images/bg-play.png');
+    width: 50%;
+    padding: 20px;
+}
 
-/* Play Section CSS End */
+.play-content h3 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.play-content h1 {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-content p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#sign-btn {
+    padding: 14px 30px;
+    background: var(--linear-text);
+    color: var(--white-color);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#rouge-btn {
+    padding: 14px 30px;
+    background: #4EC5F7;
+    color: var(--white-color);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.play-img img {
+    height: 550px;
+}
+
+/* Banner Section CSS End */
+
+/* Gamer Section Start */
+#gamer-container {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    align-items: center;
+    text-align: end;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.gamer-content h1 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.gamer-content p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#quote {
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+/* Gamer Section End */
 
 
 
 
 /* Responsive Design */
 
-/* Header Part Media For Responsive Start */
+/* Header Part Responsive Start */
 @media (max-width: 470px) {
     #header-container {
         flex-direction: column;
@@ -145,4 +238,47 @@ span {
     }
 }
 
-/* Header Part Media For Responsive End */
+/* Header Part Responsive End */
+
+/* Banner Section Responsive Start */
+@media (max-width: 470px) {
+    #play-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .play-img img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .play-content {
+        margin-top: 60px;
+        width: 100%;
+    }
+}
+
+/* Banner Section Responsive End */
+
+/* Gamer Section Responsive Start */
+@media (max-width: 470px) {
+    #gamer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .gamer-img img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Gamer Section Responsive End */
