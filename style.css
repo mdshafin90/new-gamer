@@ -242,22 +242,9 @@ span {
     font-weight: 500;
 }
 
-/* .online-game-img .online-game-img-div:nth-child(3) {
+/* 
+.online-game-img-div:nth-child(3) {
     position: relative;
-    display: flex;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 300px;
-    height: 400px;
-}
-
-.online-game-img .online-game-img-div:nth-child(3) img {
-
-    transition: .5s ease;
-}
-
-.online-game-img-div:nth-child(3):hover img {
-    transform: scale(1.1);
 }
 
 .online-game-img-div:nth-child(3) .online-game-layer {
@@ -272,34 +259,29 @@ span {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding: 0 4rem;
     justify-content: center;
     opacity: 0;
     transition: .5s ease;
-}
-
-.online-game-img-div:nth-child(3) .online-game-layer a i {
-    font-size: 50px;
-    color: white;
+    border-radius: 3rem;
 }
 
 .online-game-img-div:nth-child(3):hover .online-game-layer {
     opacity: 1;
-}
-
-.online-game-img-div:nth-child(3) {
-    position: relative;
-}
-
-.image-container {
-    position: relative;
-}
-
-.bottom-text {
-    position: absolute;
-    text-align: center;
-    top: 3000;
-
 } */
+
+
+/* .online-game-img-div:nth-child(3) .online-game-layer {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 150px;
+}
+
+.online-game-img-div:nth-child(3) .online-game-layer:hover {
+    padding: 60px;
+    background-color: #3C354F;
+} */
+
 
 /* Online Game CSS End */
 
@@ -382,7 +364,7 @@ span {
     width: 100%;
     color: var(--white-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -392,10 +374,18 @@ span {
     padding-left: 70px;
 }
 
+.career-content h1 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
 .career-content p {
+    color: #FFF;
     font-size: 18px;
     font-weight: 400;
-    color: #FFF;
 }
 
 .career-content .career-paragraph {
@@ -420,24 +410,11 @@ span {
     color: #FF42A5;
 }
 
-.career-content h1 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.career-img {
-    width: 50%;
-    padding-right: 100px;
-    margin-right: 50px;
-    flex-shrink: 0;
-}
-
 /* Career CSS End */
 
 /* Action CSS Start */
 #action-container {
     width: 100%;
-    height: 400px;
 }
 
 .action-content {
@@ -675,6 +652,7 @@ span {
         justify-content: center;
         margin-top: 40px;
         margin: auto;
+        display: none;
     }
 
     #play-instant-img #play-instant-img-one {
@@ -698,12 +676,22 @@ span {
 
 /* Play Instant Responsive End */
 
+/* Game Online Responsive Start */
+@media (max-width: 470px) {
+    #games-online-container {
+        display: none;
+    }
+}
+
+/* Game Online Responsive End */
+
 /* Career Responsive Start */
 @media (max-width: 470px) {
     #career-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 30px;
     }
 
     .career-content {
@@ -740,3 +728,50 @@ span {
 }
 
 /* Career Responsive End */
+
+/* Action Responsive Start */
+@media (max-width: 470px) {
+    .action-content {
+        flex-direction: column;
+    }
+
+    .action-content .action-content-div {
+        margin: 10px;
+    }
+
+    .action-content-div-two {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .action-content-div-two .action-content-div {
+        margin: 10px;
+    }
+}
+
+/* Action Responsive End */
+
+
+/* Footer Responsive Start */
+@media(max-width: 470px) {
+    #footer-container .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-container .footer-content p {
+        margin-bottom: 10px;
+    }
+
+    #footer-container .footer-terms {
+        font-size: 12px;
+    }
+
+    #footer-container .footer-terms p {
+        margin-left: 10px;
+    }
+}
+
+/* Footer Responsive End */
