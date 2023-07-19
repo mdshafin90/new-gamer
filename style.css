@@ -530,10 +530,12 @@ span {
 
 /* Footer CSS End */
 
+
 /* Responsive Design */
 
-/* Header Part Responsive Start */
 @media (max-width: 470px) {
+
+    /* Header Part Responsive Start */
     #header-container {
         flex-direction: column;
         justify-content: center;
@@ -563,12 +565,11 @@ span {
     .logo-img {
         padding: 15px 30px;
     }
-}
 
-/* Header Part Responsive End */
+    /* Header Part Responsive End */
 
-/* Banner Section Responsive Start */
-@media (max-width: 470px) {
+    /* Banner Section Responsive Start */
+
     #play-container {
         flex-direction: column-reverse;
         align-items: center;
@@ -588,12 +589,11 @@ span {
         margin-top: 60px;
         width: 100%;
     }
-}
 
-/* Banner Section Responsive End */
+    /* Banner Section Responsive End */
 
-/* Gamer Section Responsive Start */
-@media (max-width: 470px) {
+    /* Gamer Section Responsive Start */
+
     #gamer-container {
         flex-direction: column;
         justify-content: center;
@@ -606,12 +606,10 @@ span {
         width: 100%;
         height: 300px;
     }
-}
 
-/* Gamer Section Responsive End */
+    /* Gamer Section Responsive End */
 
-/* Online Game Responsive Start */
-@media (max-width: 470px) {
+    /* Online Game Responsive Start */
     .online-game-img {
         flex-direction: column;
         justify-content: center;
@@ -630,12 +628,10 @@ span {
     #online-game-container #online-game-paragraph {
         font-size: 15px;
     }
-}
 
-/* Online Game Responsive End */
+    /* Online Game Responsive End */
 
-/* Play Instant Responsive Start */
-@media(max-width: 470px) {
+    /* Play Instant Responsive Start */
     #play-instant {
         flex-direction: column;
         align-items: center;
@@ -651,13 +647,12 @@ span {
     #play-instant-img-one {
         width: 100%;
         margin-top: 10px;
+
     }
-}
 
-/* Play Instant Responsive End */
+    /* Play Instant Responsive End */
 
-/* Game Online Responsive Start */
-@media (max-width: 470px) {
+    /* Game Online Responsive Start */
     #games-online-container {
         flex-direction: column-reverse;
         justify-content: center;
@@ -681,12 +676,10 @@ span {
     #games-online-img #games-online-img-two {
         display: none;
     }
-}
 
-/* Game Online Responsive End */
+    /* Game Online Responsive End */
 
-/* Career Responsive Start */
-@media (max-width: 470px) {
+    /* Career Responsive Start */
     #career-container {
         flex-direction: column;
         justify-content: center;
@@ -725,12 +718,11 @@ span {
         margin-right: 0;
     }
 
-}
+    /* Career Responsive End */
 
-/* Career Responsive End */
 
-/* Action Responsive Start */
-@media (max-width: 470px) {
+    /* Action Responsive Start */
+
     .action-content {
         flex-direction: column;
     }
@@ -748,13 +740,11 @@ span {
     .action-content-div-two .action-content-div {
         margin: 10px;
     }
-}
 
-/* Action Responsive End */
+    /* Action Responsive End */
 
+    /* Footer Responsive Start */
 
-/* Footer Responsive Start */
-@media(max-width: 470px) {
     #footer-container .footer-content {
         flex-direction: column;
         justify-content: center;
@@ -772,6 +762,6 @@ span {
     #footer-container .footer-terms p {
         margin-left: 10px;
     }
-}
 
-/* Footer Responsive End */
+    /* Footer Responsive End */
+}
