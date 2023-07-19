@@ -318,7 +318,6 @@ span {
 
 /* Play Instant CSS End */
 
-
 /* Games Online CSS Start */
 #games-online-container {
     display: flex;
@@ -332,6 +331,8 @@ span {
 }
 
 #games-online-container #games-online-img #games-online-img-two {
+    width: 300px;
+    height: 300px;
     margin-top: -300px;
     margin-left: 500px;
     flex-shrink: 0;
@@ -366,6 +367,7 @@ span {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 80px;
 }
 
 .career-content {
@@ -651,27 +653,17 @@ span {
         align-items: center;
         justify-content: center;
         margin-top: 40px;
-        margin: auto;
-        display: none;
     }
 
-    #play-instant-img #play-instant-img-one {
-        width: 300px;
-        height: 400px;
-        margin-top: 30px;
+    .play-instant-content h1 {
+        text-align: center;
+        font-size: 25px;
     }
 
-    #play-instant-img #play-instant-img-two img {
-        width: 100px;
-        height: 200px;
-        margin-top: 300px;
-        margin-right: 300px;
+    #play-instant-img-one {
+        width: 100%;
+        margin-top: 10px;
     }
-
-    /* #play-instant-img {
-        display: flex;
-        justify-content: center;
-    } */
 }
 
 /* Play Instant Responsive End */
@@ -679,6 +671,26 @@ span {
 /* Game Online Responsive Start */
 @media (max-width: 470px) {
     #games-online-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .games-online-content .games-online-content-heading {
+        text-align: center;
+    }
+
+    .games-online-content p {
+        text-align: center;
+    }
+
+    #games-online-img-one {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #games-online-img #games-online-img-two {
         display: none;
     }
 }
